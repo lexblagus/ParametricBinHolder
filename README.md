@@ -1,14 +1,22 @@
-# Parametric Organizer
+# Parametric Bin Holder
 
-https://www.thingiverse.com/thing:___
+https://www.thingiverse.com/thing:4923121
 
-https://github.com/lexblagus/Parametric___
+https://github.com/lexblagus/ParametricBinHolder
 
 ## Summary
 
 Holder support for Marfinite™ standard bins or equivalent with inverted L shape in the holding chanfer.
 
+![Printed piece](images/print.png)
+
+![Holding a bin](images/usage.png)
+
 ## Parameters
+
+### Bin
+
+![Measurements schematics fir the bin](images/measurements-reference-bin.png)
 
 - A: `binHeight`;
 - B: `binWidth`;
@@ -20,25 +28,26 @@ Holder support for Marfinite™ standard bins or equivalent with inverted L shap
 - H: `binChanferLengthInternal`;
 - I: `binChanferWidth`;
 
-![Measurements schematics](./images/measurements-reference.jpg)
+### Screws
+
+![Measurements schematics for the screw holes](images/measurements-reference-holes.png)
+
+- J: `screwHeadDiameter`;
+- K: `screwHeadHeight`: 0 for flat head, > 0 for conical;
+- L: `screwShankDiameter`;
+- M: `screwShankLength`;
+- N: `screwSpacing`;
+- `screwQuantity`;
 
 ## Generator
 
-At folder `generator` you can find the script to generate several files at once (Mac users only by now):
+At folder `generator` you can find the script to generate several files at once (tested on MacOS only):
 
 - Edit `const templates` at `generator/index.js` as you wish
 - Run `cd generator` then `./run.sh` to generate files.
 
+The measurements for the oficial sizes are not corret yet, this is a work in progress.
+
 ## Examples
 
-I did not print anyone yet (hello world!). This is the piece aligned with the previous image:
-
-![Design piece](./images/open-scad-render.png)
-
-This is the slicing example for models 3 to 6:
-
-![Printing example](./images/utimmaker-cura-3-6.png)
-
-## To do
-
-- Holes
+![Designing piece](./images/open-scad-render.png)
